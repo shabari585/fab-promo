@@ -1,0 +1,228 @@
+body{
+    overflow: hidden;
+}
+#search{
+    float: right
+}
+.main-container{
+    width: 100%;
+}
+.main-container .form-control{
+    height: auto;
+    border-color: transparent;
+    border-radius: 35px;
+    width: 15%;
+    height: 30px;
+    float: right;
+    left: -50%;
+    transform: translate(-50%,0);
+    background-color: #F4F2F3;
+    font-size: 80%;
+}
+.blog-text{
+    top: 0;
+    left: 50%;
+    transform: translate(300%,0)
+}
+.blog-text h3{
+    font-size: 110%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 420;
+    text-align: center;
+    
+}
+
+/* MENU */
+.menu-row{
+    top: 0% !important;
+    transform: translate(0,-15%)
+}
+.menu{
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 0% !important;
+    transform: translate(55%,0)
+}
+.menu li{
+    float: left;
+    list-style-type: none;
+    margin: 25px;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#999;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+}
+.menu li:hover{
+    border-top: 1px solid red;
+    cursor: pointer;
+   
+}
+
+/* blog */
+
+.blog-col{
+   width:95%;
+    height: auto;
+    left: 0% !important;
+    margin: 0 !important
+}
+
+.blog-col img{
+    left: 10%;
+    transform: translate(2.5%,0)
+}
+.blog-news{
+    width:95%;
+     height: auto;
+     left: 0% !important;
+     margin: 0 !important
+ }
+.blog-news h6{
+    font-size: 80%;
+    color:#FE7BB5;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+} 
+.blog-news h6:hover{
+    text-decoration: underline;
+    text-decoration-color: #FE7BB5;
+    cursor: pointer;
+}
+.blog-news h3{
+    font-size: 140%;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align:center;
+    width: 80%;
+    height: auto;
+    left: 50%;
+    transform: translate(12%,0)
+}
+.blog-news h3:hover{
+    color: #FE7BB5;
+    cursor: pointer;
+}
+.blog-news p{
+    color: grey;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 440;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(18%,0)
+}
+.blog-news .btn-primary{
+    border-radius:0px;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #FE7BB5;
+    border-color: transparent;
+    height:8vh;
+    width: 40%;
+    left: 50%;
+    transform: translate(60%,0);
+    cursor: pointer
+}
+
+/* right-menu */
+.sidebar{
+    width: 100%;
+    left: 50%;
+    transform: translate(20%,0)
+}
+.right-menu .form-control{
+    height: auto;
+    border-color: transparent;
+    border-radius: 0px;
+    width: 190%;
+    height: 50px;
+    background-color: #F4F2F3;
+    font-size: 100%;
+}
+.border-bot{
+    border-bottom: 0.5px solid #ddd
+}
+.border-bot h2{
+    font-size: 100%;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FE7BB5;
+}
+.border-bot h3{
+    font-size: 105%;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 540;
+    color: #FE7BB5;
+}
+.border-bot h2:hover{
+    text-decoration: underline;
+    text-decoration-color: #FE7BB5;
+    cursor: pointer;
+}
+.border-bot h3:hover{
+    text-decoration: underline;
+    text-decoration-color: #FE7BB5;
+    cursor: pointer;
+}
+.border-bot hr{
+    width: 290%;
+}
+.social h2{
+    font-size: 100%;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FE7BB5;
+}
+.social .icons{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    
+    
+}
+.social i{
+    padding: 5px;
+    font-size: 100%;
+    color: #fff;
+}
+.social .icons:hover{
+    background-color: #999;
+}
+
+.right-menu #search-icon{
+   float: right;
+   left:100%;
+   transform: translate(1000%,-200%);
+   color:#999;
+}
+.bot-text{
+    color: #FE7BB5;
+    font-size: 100%;
+    font-weight: 450;
+}
+.bot-text:hover{
+    text-decoration: underline;
+    color: #FE7BB5;
+    cursor: pointer;
+}
+.copy h2{
+    font-size: 110%;
+    font-weight: 450;
+    text-align: center;
+    font-family: a
+}
