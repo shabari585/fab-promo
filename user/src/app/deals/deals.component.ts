@@ -4,11 +4,11 @@ declare var $: any;
 declare var require:any;
 require('raty-js');
 @Component({
-  selector: 'app-flipkart-coupons',
-  templateUrl: './flipkart-coupons.component.html',
-  styleUrls: ['./flipkart-coupons.component.css']
+  selector: 'app-deals',
+  templateUrl: './deals.component.html',
+  styleUrls: ['./deals.component.css']
 })
-export class FlipkartCouponsComponent implements OnInit {
+export class DealsComponent implements OnInit {
 
   constructor() { }
 

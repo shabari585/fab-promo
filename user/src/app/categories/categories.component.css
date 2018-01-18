@@ -1,0 +1,111 @@
+body{
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 100%;
+}
+.cat-down{
+    top: 0%;
+    transform: translate(0,22%);
+    height: 100vh;
+    min-height: 100px;
+}
+.stores-heading{
+    text-align: left;
+    font-size: 120%;
+    font-weight: 550 
+}
+.category-ul{
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.category-ul li{
+    text-align: left;
+    float: left;
+    text-transform: uppercase;
+    font-size: 100%;
+    color: #999;;
+    list-style-type: none;
+    padding: 0px 14px;
+    font-weight: 500;
+    cursor: pointer
+}
+.category-container{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    height: 100%;
+    
+}
+.category-row{
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 20px
+}
+.category-row .cat-gig{
+    background-color: #fff;
+    height: 100px;
+    width: 140px;
+    /* border: 0.5px solid #ddd; */
+    /* border-top-right-radius: 5px;
+    border-top-left-radius: 5px; */
+}
+.cat-img-gig{
+    height: 60%;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.cat-text-gig{
+    height: 40%;
+    text-align: center;
+    font-size: 90%;
+    line-height: 2.5
+}
+@media screen and (min-width:220px) and (max-width:740px){
+    .w-control{
+        width: 330px
+    }
+    .cat-down{
+        top: 0%;
+        transform: translate(0,20%);
+       height: 100%;
+       margin-bottom:50%;
+    }
+    .category-container{
+        position: relative;
+        display: block;
+        min-height: auto;
+        height: auto;
+        
+    }
+    .category-row{
+        position: relative;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 20px
+    }
+    .category-row .cat-gig{
+        background-color: #fff;
+        height: 100px;
+        width: 150px;        
+    }
+    .category-ul li{
+        text-align: left;
+        float: left;
+        text-transform: uppercase;
+        font-size: 100%;
+        color: #999;;
+        list-style-type: none;
+        padding: 0px 7px;
+        font-weight: 500;
+        cursor: pointer
+    }
+}

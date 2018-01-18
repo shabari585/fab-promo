@@ -3,6 +3,26 @@ body{
     width: 100%;
     height: 100%;
 }
+.blog-container{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    height: auto;
+    
+}
+.blog-col{
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px
+}
+.blog-col .gig{
+    background-color: #fff;
+    height: auto;
+    width: 270px;
+}
 .flip1{
     background-color: #fff;    
 }
@@ -20,10 +40,11 @@ p{
     padding: 0px 5px;
     font-size: 80%;
     color: #666;
-    cursor: pointer;
+   
 }
 .flip-copn li a{
-    color: #007BFF;    
+    color: #007BFF;
+    cursor: pointer;    
 }
 .flip-div{
     display: flex;
@@ -251,6 +272,7 @@ border-bottom: 0.5px solid #ddd;
     background-color: #fff;
     width: 100%;
     height: 230px;
+    min-height: 30px;
 }
 .div-border{
     /* border-bottom: 0.5px solid #ddd; */
@@ -335,6 +357,14 @@ border-bottom: 0.5px solid #ddd;
     font-size: 125%;
     font-weight: 650;
 }
+.expiry p a{
+    font-size: 90%;
+    color: #999;
+}
+.expiry p a:hover{
+    color: #007BFF;
+    cursor: pointer;
+}
 .offer-div{
     border-top: 0.5px solid #ddd;
     height: 40px; 
@@ -348,10 +378,10 @@ border-bottom: 0.5px solid #ddd;
     line-height: 3;
 }
 .offer-li{
-    width: 150px;
+    width: 205px;
 }
 .offer-li1{
-    width:365px;
+    width:200px;
     background-color: #7E3F9D;
     height: 45px;
     text-align: center;
@@ -498,114 +528,16 @@ color: #999
     cursor: pointer;
 }
 
-/* flipkart deals */
-.flipkart-deals-container{
-    position: relative;
-    display: block;
-    min-height: 300px;
-    height: 100px;
-    
-}
-.deals-div-gig-row{
-    position: relative;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 290px;
-    grid-gap: 20px
-}
-.deals-div-gig-row .gig{
+/* cat-text-div */
+.cat-text-div{
     background-color: #fff;
-    height: 290px;
-    width: 260px;
-   
+    height: auto;
 }
-.gig-padding{
-    padding: 10px;
+.cat-padding{
+    padding: 15px;
 }
-.gig-img{
-    height: 60%;
-    width: 100%;
-    position: relative;
-}
-.gig-text{
-    height: 40%;
-    position: relative;
-    width: 100%;
-}
-
-
-.gig-padding h3{
-    font-size:100%;
-    font-weight: 410
-}
-.gig-padding h3:hover{
-    color: #2780E3;
-    cursor: pointer;
-}
-.image{
-    height: 50%;
-}
-.gig-padding img{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
-    left: 25%;
-    transform: translate(25%,0);
-    width: 70px;
-    height: 130px;
-    padding: 8px;
-}
-.deal-div img{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    left: 17%; 
-}
-.gig-padding .view-deal{
-    position: relative;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    vertical-align: middle;
-    display: flex;
-}
-.view-deal h4{
-    font-size: 120%;
-    color: #000;
-    font-weight: 650
-}
-.view-deal del{
+.cat-padding p{
     font-size: 90%;
-    color: #666;
-}
-.p-deal{
-    color: #666;
-}
-.p-deal:hover{
-    color: #2780E3;
-}
-.deal-div-bottom{
-    height: 40px;
-    width: 100%;
-    background-color: #7E3F9D;
-}
-.deal-div-bottom p{
-    color: white;
-    font-size: 100%;
-    font-weight: 650;
-    text-align: center;
-    line-height: 2.5
-}
-.deals-div-gig-row .gig:hover{
-    box-shadow: 0px 5px 15px 0px #ddd;
-   
-}
-.deals-div-gig-row .gig-img:hover{
-    cursor: pointer;
 }
 
 /* related store */
@@ -777,34 +709,55 @@ color: #999
     top: 50%;
     transform: translate(0,50%)
 }
+.home-container{
+    position: relative;
+    display: block;
+    min-height: 100vh;
+    height: auto;
+    
+}
+.home-col{
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px
+}
+.home-col .gig{
+height:60px;
+width: 130px;
+background-color: white;
+}
+.ajio{
+    background-image: url("../../assets/images/ajio.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    transform: translate(0,10%)
+}
+.snapdeal{
+    background-image: url("http://54.212.202.225/static/images/351d2c38_fdef_4461_ad04_a22df6d6be6b.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 50px;
+    width: 90%;
+    justify-content: center;
+    align-items: center ;
+    top: 10%;
+    transform: translate(5%,10%)
+}
 @media screen and (min-width:220px) and (max-width:740px){
     .w-control{
         width: 330px
     }
     .cat-mobile{
-        display: none;
-     }
-    .flip-div{
-        position: relative;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        /* vertical-align: middle; */
-        flex-direction: row;
-    } 
-    .flip-rat{
-        /* border-right: 0.5px solid #ddd; */
-        width:100%;
-        height: auto;
-        /* background-color: white; */
-        text-align: center;
-    }
-    .flip-text-div{
-        width: 100%;
-        border-left: 0;
-    }
-    .flip-text{
-        padding: 10px;
+       display: none;
     }
     .flipkart-ul{
         display: flex;
@@ -830,136 +783,50 @@ color: #999
         position: relative;
         border-bottom: 3px solid #2F1231;
     }
-    .div-text{
-        padding: 12px;
-        display: block;
-        justify-content:center;
-        align-items: center;
-        vertical-align: middle;
-        flex-direction: column;
-    }
-    .flat-of-div{
-        padding: 5px;
-    }
-    
-    .flat-off{
-        border:0;
-        border-radius: 0px;
-        width: 100%;
-        height: 30px;
-        text-align: center;
-    }
-    .flat-off-text{
-        height: 60%;
-        text-align: center;
-        /* width: 100px; */
-        /* border-bottom: 0.5px solid #ddd; */
-        top: 10%;
-        transform: translate(0,5%)
-    }
-    .flat-off-text h1{
-        font-size: 90%;
-        font-weight: 620;
-        text-align: left
-    }
-    .flat-off-color{
-        display: none;
-       
-    }
-    .flat-off-color p{
-        color: #fff;
-        font-weight: 500;
-        font-size: 80%;
-        vertical-align: middle;
-        line-height: 2;
-    }
-    .flipkart-deals-container{
-        position: relative;
-        display: block;
-        min-height: 300px;
-        height: 100px;
-        
-    }
-    .deals-div-gig-row{
+    .home-col{
         position: relative;
         height: auto;
         display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        grid-auto-rows: 290px;
-        grid-gap: 20px
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 15px
     }
-    .deals-div-gig-row .gig{
-        background-color: #fff;
-        height: 290px;
-        width: 260px;
-       
-    }
-    .expiry{
-        width: 100%;
-    }
-    .expiry h1{
-        font-size: 108%;
-        font-weight: 620;
+    .home-col .gig{
+    height:60px;
+    width: 155px;
+    background-color: white;
     }
     .div-menu{
-        background-color: #fff;
-        width: 100%;
-        height: auto;
+        display: none
     }
-    .offer-div ul li{
-        list-style-type: none;
-        float: left;
-        padding: 0px 0px;
-        font-size: 90%;
-        line-height: 3;
-        margin: 0
-    }
-    .offer-li{
-        width: 95px;
-    }
-    .offer-li1{
-        width:330px;
-        background-color: #7E3F9D;
-        height: 45px;
-        text-align: center;
-        color:white;
-        font-weight: 550;
-        left: -50%;
-        transform: translate(-12%,0)
-    }
-    .offer-li1 i{
-    align-items: flex-end;
-    justify-content: flex-end;
-    text-align: center;
-    vertical-align: middle;
-    float: right;
-    top: 50%;
-    transform: translate(0,100%)
-    }
-    .flipkart-deals-container{
-        position: relative;
+    .flip-div{
         display: block;
-        min-height: auto;
-        height: auto;
-        
+        justify-content: center;
+        align-items: center;
+        /* vertical-align: middle; */
+        flex-direction: column;
+        width: 100%;
     }
-    .deals-div-gig-row{
-        position: relative;
+    .flip-rat{
+        /* border-right: 0.5px solid #ddd; */
+        width:100%;
         height: auto;
-        display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        grid-auto-columns: 290px;
-        grid-gap: 20px
+        /* background-color: white; */
+        text-align: center;
     }
-    .deals-div-gig-row .gig{
-        background-color: #fff;
-        height: 310px;
-        width: 330px;
-       
+    .flip-rat:after{
+       display: none
+    }
+    .flip-text-div{
+        width: 100%; 
+        border-left: 0;      
+    }
+    .flip-text{
+        padding: 10px;
     }
     .coupons-down{
         top: 10%;
         transform: translate(0,10%);
-        margin-bottom: 30%;  
+        margin-bottom: 20%;        
     }
 }

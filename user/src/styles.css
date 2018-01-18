@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.w-control{
+width: 1150px;
+margin: 0 auto;
+}
+.div-width{
+    width: 105%;
+}
+.home-down{
+    top: 0%;
+    transform: translate(0,6%)
+}
+.coupons-down{
+    top: 5%;
+    transform: translate(0,5.5%);
+    margin-bottom: 10%
+}
+.deal-down{
+    top: 0%;
+    transform: translate(0,8%)
+}

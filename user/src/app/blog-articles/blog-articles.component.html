@@ -1,0 +1,49 @@
+<body>
+    <nav class="navbar navbar-default navbar-back">
+        <div class="w-control">
+         <img src="http://54.212.202.225/static/app/customer-panel/modules/assets/images/logo-png.png" width="250px" height="80px" class="img-fluid"> 
+         
+        </div> 
+      
+        
+       </nav>
+
+       <div class="w-control">
+          <ul class="blog-ul">
+              <li routerLink='/home'>Home</li>
+              <li>Blog Home</li>
+              <li routerLink='/deals'>Deals</li>
+              <li>Fashion</li>
+              <li>Mobiles</li>
+            </ul><br><br>
+
+
+<div class="row">
+  <div class="col-lg-9 col-md-9 col-xs-12">
+    <router-outlet></router-outlet><br><br>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-xs-12">
+      <div class="blog-cat-div">
+          <div class="blog-cat"> 
+       <h1 class="blog-cat-h1">Categories</h1>
+       <p class="blog-p">Mobiles</p>
+       <p class="blog-p1">Fashion</p>
+      
+        </div><br>
+        <div class="latest-blog">
+            <h1 class="latest-cat-h1">Latest Blog Articles</h1><br>
+   
+            <li routerLink='/blog-articles/cash'><p>Cashback On Mobiles & Laptops</p></li><br>
+            <li routerLink='/blog-articles/upcoming-mobiles'><p>Upcoming Nokia Mobiles In India</p></li>
+          </div>
+       </div>
+  </div>
+</div>
+
+
+
+       </div><br><br>
+
+       
+</body>
